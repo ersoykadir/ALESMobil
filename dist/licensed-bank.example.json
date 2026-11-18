@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "my-original-bank-v1",
+  "title": "Kendi soru koleksiyonum",
+  "license": {
+    "kind": "original",
+    "statement": "Bu örnek soru ALESMobil prototipi için özgün olarak yazılmıştır. Kendi sorularınızı eklerken kullanım hakkı açıklamasını güncelleyin."
+  },
+  "questions": [
+    {
+      "id": "original-average-01",
+      "section": "sayisal",
+      "topic": "Ortalama",
+      "title": "Üç sayının ortalaması",
+      "prompt": "8, 14 ve 20 sayılarının aritmetik ortalaması kaçtır?",
+      "options": ["10", "12", "14", "16", "18"],
+      "answer": 2,
+      "explanation": ["Sayıların toplamı 8 + 14 + 20 = 42’dir.", "Üç sayı olduğu için 42 / 3 = 14 bulunur."],
+      "provenance": { "kind": "original" }
+    }
+  ]
+}

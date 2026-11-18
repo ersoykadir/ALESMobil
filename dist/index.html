@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Sayısal ve Sözel özgün örneklerle ALES çalış. Cevaplarını kontrol et, çözümü adım adım keşfet ve ilerlemeni cihazında sakla.">
+  <title>ALESMobil · Her gün bir adım</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#question-heading">Soruya geç</a>
+  <header class="header"><a class="brand" href="./" aria-label="ALESMobil ana sayfa"><span class="brand-icon" aria-hidden="true">a.</span><span>ALES<span class="brand-light">Mobil</span><small>HER GÜN BİR ADIM</small></span></a><div class="header-right"><span class="save-status" id="save-status" role="status">Bu cihazda saklanır</span><button class="icon-button" id="settings-open" aria-label="İçerik ve ayarlar">⚙</button></div></header>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="Çalışma özeti"><div class="sidebar-intro"><span class="eyebrow">KENDİ HIZINDA</span><h1>Az az çalış.<br>Kalıcı öğren.</h1><p>Bir soru, yeni bir bakış açısı.</p></div><div id="summary"></div><div class="collection"><span class="collection-icon" aria-hidden="true">✳</span><div><strong id="collection-title">Başlangıç koleksiyonu</strong><p id="collection-note">Özgün örnek sorular</p></div></div><nav id="question-nav" aria-label="Soru haritası"></nav><div class="map-legend"><span>○ Bekliyor</span><span>✓ Doğru</span><span>× Yanlış</span><span>★ Kaydedildi</span></div><p class="sidebar-foot">Küçük adımların toplamı,<br>büyük bir ilerleme.</p></aside>
+    <main id="main" class="main"><div class="main-top"><div><span class="eyebrow">BUGÜNKÜ ÇALIŞMAN</span><h2>Sıradaki adımın hazır.</h2></div><span class="demo-tag" id="mode-tag">ÖZGÜN ÖRNEKLER</span></div><div class="section-switch" id="section-switch" role="group" aria-label="Test bölümü"></div><div class="study-toolbar"><div class="filters" id="filters" role="group" aria-label="Soru filtresi"></div><span id="section-count" class="muted"></span></div><div id="question-container"></div><footer class="content-note">Bağımsız çalışma prototipi. ÖSYM ile bağlantılı değildir.<br>Bu koleksiyon resmî sınav soruları içermez.</footer></main>
+  </div>
+  <dialog id="settings" aria-labelledby="settings-title"><div class="dialog-head"><h2 id="settings-title">Çalışma alanın</h2><button class="icon-button" id="settings-close" aria-label="Ayarları kapat">×</button></div><p class="dialog-intro">Sorularını yönet, kendi hızında devam et.</p><h3>İçerik hakkında</h3><p>Başlangıç koleksiyonu, bu prototip için yazılmış 12 özgün örnek içerir. Hiçbiri “PDF’den doğrulandı” olarak işaretlenmez. ÖSYM PDF’si, sınav metinleri ve taranmış görseller bu uygulamada bulunmaz.</p><h3>İzinli soru paketi yükle</h3><p>Özgün veya kullanım hakkına sahip olduğun bir JSON soru paketini bu cihazda açabilirsin. Dosya bir sunucuya gönderilmez. İçe aktarma, kaynak doğrulaması yapmaz.</p><a class="text-link" href="./licensed-bank.example.json" download>Örnek JSON şablonunu indir ↓</a><label class="consent"><input type="checkbox" id="rights-confirm">Bu içeriklerin sahibiyim veya kullanımları için gerekli izne sahibim.</label><label class="file-label" for="bank-file">JSON soru paketi seç <input type="file" accept=".json,application/json" id="bank-file"></label><p id="import-status" role="status" class="import-status"></p><div id="bank-actions" class="bank-actions"></div><h3>İlerleme ve gizlilik</h3><p>Cevapların, işaretlerin ve son kaldığın soru yalnızca bu tarayıcıda tutulur. Farklı cihazlara aktarılmaz. Tarayıcı verileri silinirse kayıtlar da silinir.</p><button class="danger-button" id="reset-progress">Bu koleksiyonun ilerlemesini sıfırla</button></dialog>
+  <noscript><p>Çalışma akışını kullanmak için JavaScript’i etkinleştir.</p></noscript>
+</body>
+</html>
